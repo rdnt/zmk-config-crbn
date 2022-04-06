@@ -51,10 +51,10 @@
 		
 		control {
 			bindings = <
-				&reset     &bootloader    &bt BT_CLR     &bt BT_PRV     &bt BT_NXT     &bt BT_SEL 1    &trans     &trans     &trans     &trans     &trans     &trans
-				&out OUT_TOG     &trans         &trans         &trans         &trans         &trans          &trans     &trans     &trans     &trans     &trans     &trans
-				&trans     &trans         &trans         &trans         &trans         &trans          &trans     &trans     &trans     &trans     &trans     &trans
-				&trans     &trans         &trans         &trans         &trans         &trans          &trans     &trans     &trans     &trans     &trans     &trans
+				&out OUT_TOG   &bt BT_SEL 1   &trans         &reset         &bt BT_SEL 1   &trans         &trans     &trans     &trans       &trans     &trans
+				&trans         &trans         &trans         &trans         &trans         &trans         &trans     &trans     &trans       &trans     &trans     &trans
+				&trans         &trans         &trans         &bt BT_CLR     &trans         &bootloader    &trans     &trans     &trans       &trans     &trans     &trans
+				&trans         &trans         &trans         &trans         &trans         &trans         &trans     &trans     &bt BT_PRV   &trans     &trans     &bt BT_NXT
 			>;
 		};
 	};
