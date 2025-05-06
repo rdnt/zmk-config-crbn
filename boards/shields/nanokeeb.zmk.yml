@@ -1,0 +1,9 @@
+file_format: "1"
+id: nanokeeb
+name: nanokeebnanokeeb
+type: shield
+url: https://github.com/rdnt/nanokeeb
+requires: [pro_micro]
+features:
+  - keys
+  - studio
