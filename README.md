@@ -1,4 +1,4 @@
-# zmk-config-crbn
+# zmk-config-nanokeeb
 
-This is my ZMK keymap for the CRBN Featherlight (nice!nano v2).
+This is my ZMK keymap for the Nanokeeb (nice!nano-v2-powered handheld microswitch keyboard).
 
