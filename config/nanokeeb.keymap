@@ -42,6 +42,7 @@
 				= <&macro_param_1to1>
 				, <&kt_off MACRO_PLACEHOLDER>
 				, <&macro_param_1to1>
+				, <&macro_param_1to2>
 				, <&mt MACRO_PLACEHOLDER MACRO_PLACEHOLDER>
 				;
         };
