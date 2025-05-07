@@ -19,6 +19,15 @@
 			bindings = <&off_mod_tap LSHIFT>, <&kt_on LSHIFT>;
 		};
 
+		mt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&sk>, <&kt_on>;
+            display-name = "Mod-Tap";
+        };
+
 		kt_on: key_toggle_on_only {
 			compatible = "zmk,behavior-key-toggle";
 			#binding-cells = <1>;
