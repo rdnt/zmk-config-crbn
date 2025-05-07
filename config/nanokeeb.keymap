@@ -38,7 +38,6 @@
 		off_mod_tap: toggle_off_mod_tap {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = /* ... */;
 			bindings
 				= <&macro_param_1to1>
 				, <&kt_off MACRO_PLACEHOLDER>
