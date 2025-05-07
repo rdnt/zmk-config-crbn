@@ -24,7 +24,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&sk>, <&kt_on>;
+            bindings = <&kt_on>, <&sk>;
             display-name = "Mod-Tap";
         };
 
