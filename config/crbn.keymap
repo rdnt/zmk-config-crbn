@@ -62,7 +62,7 @@
 			>;
 		};
 
-                su {
+        su {
 			bindings = <
 				&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans            &trans            &trans          &mkp RCLK
 				&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans            &trans            &trans          &trans
