@@ -1,5 +1,5 @@
 include:
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: nanokeeb
 
 
@@ -10,5 +10,5 @@ include:
   #
   # More info:
   # https://zmk.dev/docs/troubleshooting#split-keyboard-halves-unable-to-pair
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: settings_reset
