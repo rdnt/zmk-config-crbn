@@ -8,6 +8,10 @@
 
 #include <layouts/common/ortho_4x12/all1u.dtsi>
 
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/pinctrl/nrf-pinctrl.h>
+
+
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -91,4 +95,30 @@
 
 &layout_ortho_4x12_all1u {
     transform = <&matrix_transform_40_all1u>;
+};
+
+/ {
+};
+
+/* Override the default nice!nano SPI pins */
+&pinctrl {
+    spi0_default: spi0_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 22)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 24)>;
+        };
+    };
+
+    spi0_sleep: spi0_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 22)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 24)>;
+            low-power-enable;
+        };
+    };
+};
+
+/* Override nice!view chip select */
+&nice_view_spi {
+    cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
 };
