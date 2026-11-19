@@ -120,8 +120,12 @@ static bool keygrid_dither(int i, int y) { return ((i + y) & 1) == 0; }
 /* ------------------------------------------------------------------------ */
 
 #define CANVAS_CF LV_COLOR_FORMAT_L8
-#define CANVAS_BUF_SIZE                                                                            \
-    LV_CANVAS_BUF_SIZE(DISP_W, DISP_H, LV_COLOR_FORMAT_GET_BPP(CANVAS_CF), LV_DRAW_BUF_STRIDE_ALIGN)
+
+#define CANVAS_BUF_SIZE \
+    (DISP_W * DISP_H)
+
+// #define CANVAS_BUF_SIZE                                                                            \
+//     LV_CANVAS_BUF_SIZE(DISP_W, DISP_H, LV_COLOR_FORMAT_GET_BPP(CANVAS_CF), LV_DRAW_BUF_STRIDE_ALIGN)
 
 /* L8: 0x00 = black, 0xFF = white */
 #define LUM_INK (KEYGRID_INVERTED ? 0xFF : 0x00)
