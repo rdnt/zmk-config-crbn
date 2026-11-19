@@ -1,0 +1,16 @@
+config ZMK_KEYGRID_SCREEN
+    bool "nice!view 4x12 key grid status screen"
+    depends on ZMK_DISPLAY && ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+    select LV_USE_IMAGE
+    select LV_USE_CANVAS
+
+if ZMK_KEYGRID_SCREEN
+
+config ZMK_KEYGRID_INVERTED
+    bool "Invert colors (light keys on a dark background)"
+
+config ZMK_KEYGRID_ROTATE_180
+    bool "Reverse landscape (rotate 180 degrees)"
+    default y
+
+endif
